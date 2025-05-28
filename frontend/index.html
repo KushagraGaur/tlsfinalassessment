@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn - Sign In</title>
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <header>
+            <h1>Welcome to TechLearn</h1>
+            <p>Creating developers, one at a time.</p>
+            <h2>Practice Daily</h2>
+            <p>Hone your skills.</p>
+        </header>
+
+        <div class="auth-tabs">
+            <button class="tab-btn active" id="signin-tab">Sign In</button>
+            <button class="tab-btn" id="signup-tab">Sign Up</button>
+        </div>
+
+        <div class="auth-form" id="signin-form">
+            <div class="form-group">
+                <label for="login-email">Email Id</label>
+                <input type="email" id="login-email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter Password">
+            </div>
+            <button class="auth-btn" id="login-btn">Continue</button>
+        </div>
+
+        <div class="auth-form hidden" id="signup-form">
+            <div class="form-group">
+                <label for="signup-email">Email Id</label>
+                <input type="email" id="signup-email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Enter Password">
+                <div class="password-strength">
+                    <span>Password Strength: <span id="strength-indicator">Weak</span></span>
+                    <ul class="password-rules">
+                        <li>Cannot contain your name or email address</li>
+                        <li>At least 8 characters</li>
+                        <li>Contains a number or symbol</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="auth-btn" id="signup-btn">Create Account</button>
+            <p class="terms">By signing up to create an account you accept Company's Terms of use & Privacy Policy.</p>
+        </div>
+
+        <footer class="auth-footer">
+            <p>Tech Learn Solutions</p>
+        </footer>
+    </div>
+    <script src="scripts/auth.js"></script>
+</body>
+</html>

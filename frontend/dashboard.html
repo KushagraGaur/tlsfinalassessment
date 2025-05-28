@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn - Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Remove profile link from sidebar -->
+<nav class="sidebar">
+  <h1 class="logo">TechLearn.</h1>
+  <ul class="nav-menu">
+    <li class="active"><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="compiler.html">Exercises</a></li>
+  </ul>
+</nav>
+
+        <main class="content">
+            <header class="content-header">
+                <h2>Hello, User</h2>
+                <p>Let's learn something new today!</p>
+            </header>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-label">Rank</span>
+                    <span class="stat-value">#174</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Accuracy</span>
+                    <span class="stat-value">78%</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Solved Exercises</span>
+                    <span class="stat-value">7</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Total Exercises</span>
+                    <span class="stat-value">110</span>
+                </div>
+            </div>
+
+            <div class="course-progress">
+                <h3>Course Progress</h3>
+                <div class="progress-item">
+                    <h4>The Web Awakens – Creating Your First HTML Page</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                    <span>Completed</span>
+                </div>
+                <div class="progress-item">
+                    <h4>Speak Loud and Clear – Meet the Headings!</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%;"></div>
+                    </div>
+                    <span>Attempted</span>
+                </div>
+                <div class="progress-item">
+                    <h4>The Grocery Scroll – Unleashing Lists</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                    <span>Completed</span>
+                </div>
+            </div>
+
+            <div class="exercise-status">
+                <h3>Exercise Status</h3>
+                <div class="status-container">
+                    <div class="status-item completed">
+                        <span class="status-icon">✅</span>
+                        <span class="status-text">How to Make UX Case Study for Beginner</span>
+                    </div>
+                    <div class="status-item completed">
+                        <span class="status-icon">✅</span>
+                        <span class="status-text">How to Conduct User Research from Scratch</span>
+                    </div>
+                    <div class="status-item not-attempted">
+                        <span class="status-icon">W</span>
+                        <span class="status-text">Web Developing</span>
+                    </div>
+                    <div class="status-item attempted">
+                        <span class="status-icon">💬</span>
+                        <span class="status-text">Designing with User Centered Approach</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip-container">
+                <h3>Tip of the day</h3>
+                <p>Start with small, focused coding sessions to build consistency in your learning journey.</p>
+            </div>
+        </main>
+
+        <aside class="profile-sidebar">
+            <div class="profile-header">
+                <img src="assets/user-icon.png" alt="User Profile" class="profile-img">
+                <h2>User Name</h2>
+                <p>Web Developer</p>
+                <div class="social-links">
+                    <a href="linkedin.url">LinkedIn</a>
+                    <a href="githubprofile">GitHub</a>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h3>Personal Stats</h3>
+                <div class="personal-stat">
+                    <span class="stat-label">Rank</span>
+                    <span class="stat-value">#174</span>
+                </div>
+                <div class="personal-stat">
+                    <span class="stat-label">Attempted</span>
+                    <span class="stat-value">6</span>
+                </div>
+                <div class="personal-stat">
+                    <span class="stat-label">Solved</span>
+                    <span class="stat-value">3</span>
+                </div>
+            </div>
+
+            <div class="course-info">
+                <h3>Course Taken</h3>
+                <p>Web Developer Course - Baby Steps</p>
+            </div>
+
+            <div class="streak-section">
+                <h3>Streak</h3>
+                <div class="streak-stat">
+                    <span class="stat-label">Active Days</span>
+                    <span class="stat-value">6</span>
+                </div>
+                <div class="streak-stat">
+                    <span class="stat-label">Longest Streak</span>
+                    <span class="stat-value">6</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>
